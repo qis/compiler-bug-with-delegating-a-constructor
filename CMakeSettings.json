@@ -1,0 +1,30 @@
+{
+  "configurations": [
+    {
+      "name": "Debug",
+      "generator": "Ninja",
+      "configurationType": "Debug",
+      "inheritEnvironments": [ "msvc_x64_x64" ],
+      "buildRoot": "${projectDir}\\build\\debug",
+      "variables": [
+        {
+          "name": "CMAKE_VERBOSE_MAKEFILE",
+          "value": "OFF"
+        }
+      ]
+    },
+    {
+      "name": "Release",
+      "generator": "Ninja",
+      "configurationType": "Release",
+      "inheritEnvironments": [ "msvc_x64_x64" ],
+      "buildRoot": "${projectDir}\\build\\release",
+      "variables": [
+        {
+          "name": "CMAKE_VERBOSE_MAKEFILE",
+          "value": "OFF"
+        }
+      ]
+    }
+  ]
+}
